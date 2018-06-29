@@ -1,0 +1,47 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-size: 30px;
+    background-size: cover;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.draggable {
+    opacity: .7;
+    transition: opacity .2s linear;
+}
+.draggable.dragged {
+    opacity: 1;
+}
+
+.Tile {
+}
+.Tile::before, .Tile::after {
+    display: block;
+}
+.Tile::before {
+    content: attr(data-title);
+    font-size: 200%;
+}
+.Tile::after {
+    content: attr(data-paragraph);
+}
+
+.Hour {
+    font-family: monospace;
+    text-align: center;
+    mix-blend-mode: overlay;
+    right: 0;
+    top: 0;
+}
+
+.ThemeSelector {
+    bottom: 0;
+}
+.ThemeSelector .option {
+    display: inline-block;
+    margin: 0 10px;
+    padding: .5em 1em;
+    background-color: #fff;
+}
