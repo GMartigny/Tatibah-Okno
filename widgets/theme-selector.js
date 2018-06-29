@@ -1,15 +1,12 @@
 import Tile from "./tile.js";
 
 export default class ThemeSelector extends Tile {
+    /**
+     * @param {Array<String>} themes
+     */
     constructor (themes) {
         super();
         this.themes = themes;
-        themes.forEach((name) => {
-            const link = document.createElement("link");
-            link.rel = "stylesheet";
-            link.href = `./themes/${name}.css`;
-            document.head.appendChild(link);
-        });
         this.current = null;
     }
 
@@ -23,13 +20,18 @@ export default class ThemeSelector extends Tile {
                 this.select(index);
             });
         });
-        super.onAppend();
         this.select(0);
+        return super.onAppend();
     }
 
+    /**
+     * @param {Number} index
+     * @return {ThemeSelector}
+     */
     select (index) {
         document.body.classList.remove(this.themes[this.current]);
         document.body.classList.add(this.themes[index]);
         this.current = index;
+        return this;
     }
 }

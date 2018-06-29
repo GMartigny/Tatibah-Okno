@@ -1,47 +1,58 @@
-html, body {
-    margin: 0;
-    height: 100%;
-    font-size: 30px;
-    background-size: cover;
-    background-color: #000;
-    overflow: hidden;
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-size: 30px;
+  background-size: cover;
+  background-color: #000;
+  overflow: hidden;
+  font-family: 'Assistant', sans-serif;
 }
-
+body.forest {
+  background-image: url("https://c402277.ssl.cf1.rackcdn.com/photos/2842/images/hero_full/shutterstock_12730534.jpg?1352150501");
+}
+.forest .Hour {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.beach {
+  background-image: url("https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1513398884/cacimba-do-padre-beach-brazil-365BEACHES1217B.jpg?itok=DUFLlpiW");
+}
+.beach .Hour {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 .draggable {
-    opacity: .7;
-    transition: opacity .2s linear;
+  opacity: .7;
+  transition: opacity .2s linear;
 }
 .draggable.dragged {
-    opacity: 1;
+  opacity: 1;
 }
-
-.Tile {
-}
-.Tile::before, .Tile::after {
-    display: block;
+.Tile::before,
+.Tile::after {
+  display: block;
 }
 .Tile::before {
-    content: attr(data-title);
-    font-size: 200%;
+  content: attr(data-title);
+  font-size: 200%;
 }
 .Tile::after {
-    content: attr(data-paragraph);
+  content: attr(data-paragraph);
 }
-
 .Hour {
-    font-family: monospace;
-    text-align: center;
-    mix-blend-mode: overlay;
-    right: 0;
-    top: 0;
+  font-family: monospace;
+  text-align: center;
+  mix-blend-mode: overlay;
+  right: 0;
+  top: 0;
 }
-
 .ThemeSelector {
-    bottom: 0;
+  bottom: 0;
 }
 .ThemeSelector .option {
-    display: inline-block;
-    margin: 0 10px;
-    padding: .5em 1em;
-    background-color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  padding: .5em 1em;
+  background-color: #fff;
 }

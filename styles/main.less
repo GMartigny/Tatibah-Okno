@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-size: 30px;
+    background-size: cover;
+    background-color: #000;
+    overflow: hidden;
+    font-family: 'Assistant', sans-serif;
+}
+
+// Themes
+@import "themes/forest";
+@import "themes/beach";
+
+.draggable {
+    opacity: .7;
+    transition: opacity .2s linear;
+
+    &.dragged {
+        opacity: 1;
+    }
+}
+
+// Widgets
+@import "widgets/tile";
+@import "widgets/hour";
+@import "widgets/theme-selector";

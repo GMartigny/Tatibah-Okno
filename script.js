@@ -1,8 +1,8 @@
 import Hour from "./widgets/hour.js";
 import ThemeSelector from "./widgets/theme-selector.js";
+import Temperature from "./widgets/temperature.js";
 
 /**
- *
  * @param {Component} component
  */
 function add(component) {
@@ -19,3 +19,6 @@ const themes = new ThemeSelector([
     "beach",
 ]);
 add(themes);
+
+const temp = new Temperature();
+add(temp);

@@ -10,7 +10,6 @@ export default function draggable (element, onDrag) {
     element.style.position = "absolute";
     element.style.cursor = "-webkit-grab";
     const { top, left } = element.getBoundingClientRect();
-    console.log(top, left);
 
     element.addEventListener("mousedown", (event) => {
         element.classList.add("dragged");

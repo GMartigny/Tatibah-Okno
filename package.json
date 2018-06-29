@@ -1,0 +1,22 @@
+{
+  "name": "tatibah",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "lessc styles/main.less style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GMartigny/Tatibah.git"
+  },
+  "author": "GMartigny",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GMartigny/Tatibah/issues"
+  },
+  "homepage": "https://github.com/GMartigny/Tatibah#readme",
+  "devDependencies": {
+    "less": "^3.0.4"
+  }
+}

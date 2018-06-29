@@ -25,19 +25,32 @@ export default class Hour extends Tile {
         this.html.dataset.paragraph = "Nantes";
     }
 
+    /**
+     * @inheritDoc
+     * @return {Hour}
+     */
     onAppend () {
         this.interval = setInterval(() => {
             this.update();
         }, 1000);
         this.update();
-        super.onAppend();
+        return super.onAppend();
     }
 
+    /**
+     * @return {Hour}
+     */
     update () {
         this.html.dataset.title = getNow();
+        return this;
     }
 
+    /**
+     * @inheritDoc
+     * @return {Hour}
+     */
     onDestroy () {
         clearInterval(this.interval);
+        return super.onDestroy();
     }
 }
