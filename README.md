@@ -2,6 +2,8 @@
 
 An open window to the outside.
 
+![Okno logo](./media/logo.svg)
+
 A product designed and prototyped by the Tatibah group during the first [HackInTime](https://twitter.com/hashtag/hackintime).
 
 ## Problematic
@@ -20,3 +22,5 @@ The user can use it to create a real connexion with someone else. Two Okno could
  - Add more communication inside houses - Okno can act as a wide range of communication form
  - Reduce the number of devices and remotes - Okno can manage the whole house demotic
  - Allow for interior personalisation - Okno can display different view (webcam, virtual world, 3D scene ...)
+
+![mockup](./media/mockup.png)
