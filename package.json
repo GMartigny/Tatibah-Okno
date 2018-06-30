@@ -1,5 +1,5 @@
 {
-  "name": "tatibah",
+  "name": "okno",
   "version": "0.1.0",
   "description": "",
   "main": "index.html",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GMartigny/Tatibah.git"
+    "url": "git+https://github.com/GMartigny/Tatibah-Okno.git"
   },
   "author": "GMartigny",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GMartigny/Tatibah/issues"
+    "url": "https://github.com/GMartigny/Tatibah-Okno/issues"
   },
-  "homepage": "https://github.com/GMartigny/Tatibah#readme",
+  "homepage": "https://github.com/GMartigny/Tatibah-Okno#readme",
   "devDependencies": {
     "less": "^3.0.4"
   }
