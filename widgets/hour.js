@@ -22,7 +22,6 @@ function getNow() {
 export default class Hour extends Tile {
     constructor () {
         super();
-        this.html.dataset.paragraph = "Nantes";
     }
 
     /**
@@ -33,6 +32,7 @@ export default class Hour extends Tile {
         this.interval = setInterval(() => {
             this.update();
         }, 1000);
+        this.paragraph = "Nantes";
         this.update();
         return super.onAppend();
     }
@@ -41,7 +41,7 @@ export default class Hour extends Tile {
      * @return {Hour}
      */
     update () {
-        this.html.dataset.title = getNow();
+        this.title = getNow();
         return this;
     }
 

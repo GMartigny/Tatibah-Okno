@@ -1,10 +1,73 @@
 .ThemeSelector {
+    position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(10px);
+    transform: translate3d(0, 75%, 0);
+    transition: transform .2s ease-out;
 
-    .option {
+    &:hover {
+        transform: translate3d(0, 0, 0);
+    }
+
+    @size: 80px;
+    .category {
         display: inline-block;
-        margin: 0 10px;
-        padding: .5em 1em;
-        background-color: #fff;
+
+        &::before, &::after {
+            display: block;
+            width: @size / 2;
+            height: @size / 2;
+            margin: @size / 4 @size / 4 @size;
+            border: 1px solid transparent;
+        }
+        &::before {
+            content: "";
+            top: -.3em;
+            position: relative;
+            background-color: rgba(255, 255, 255, .2);
+            border-radius: @size / 2;
+        }
+        &::after {
+            content: attr(data-icon);
+            top: 0;
+            position: absolute;
+            font-size: 70%;
+            text-align: center;
+        }
+
+        &:hover {
+            &::before {
+                border-color: rgba(255, 255, 255, .7);
+            }
+            .themes {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+            }
+        }
+
+        .themes {
+            position: absolute;
+            will-change: transform;
+            bottom: 0;
+            left: 0;
+            transform: translate3d(0, 100%, 0);
+            transition: transform .2s ease-out, opacity .2s linear;
+            width: 100%;
+            background-color: #fff;
+            opacity: 0;
+
+            .theme {
+                margin: .15em 1em 0;
+                display: inline-block;
+                width: @size;
+                height: @size;
+                cursor: pointer;
+                border-radius: 4px;
+                background-size: cover;
+            }
+        }
     }
 }

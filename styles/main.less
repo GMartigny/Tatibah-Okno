@@ -5,15 +5,20 @@ html, body {
     background-size: cover;
     background-color: #000;
     overflow: hidden;
-    font-family: 'Assistant', sans-serif;
+    font-family: "Assistant", sans-serif;
 }
 
 // Themes
-@import "themes/forest";
-@import "themes/beach";
+@import "themes/amber";
+@import "themes/cotton";
+@import "themes/dew";
+@import "themes/dream";
+@import "themes/journey";
+@import "themes/mistery";
+@import "themes/wilderness";
 
 .draggable {
-    opacity: .7;
+    opacity: .5;
     transition: opacity .2s linear;
 
     &.dragged {
@@ -25,3 +30,13 @@ html, body {
 @import "widgets/tile";
 @import "widgets/hour";
 @import "widgets/theme-selector";
+@import "widgets/elestric";
+
+@font-face {
+    font-family: "Assistant";
+    font-style: normal;
+    font-weight: normal;
+    src: url(https://use.fontawesome.com/releases/v5.1.0/webfonts/fa-solid-900.woff2) format("woff2"),
+        url(https://use.fontawesome.com/releases/v5.1.0/webfonts/fa-solid-900.woff) format("woff");
+    unicode-range: U+f000-ffff;
+}

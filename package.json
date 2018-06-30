@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "lessc styles/main.less style.css"
+    "build": "lessc styles/main.less app.css"
   },
   "repository": {
     "type": "git",

@@ -5,8 +5,17 @@ export default class Temperature extends Tile {
         super();
     }
 
+    toHTML () {
+        const div = super.toHTML();
+
+
+
+        return div;
+    }
+
     onAppend () {
-        this.html.dataset.title = "25°";
+        this.title = "25°";
+        this.paragraph = "\uf0c2";
         return super.onAppend();
     }
 }
